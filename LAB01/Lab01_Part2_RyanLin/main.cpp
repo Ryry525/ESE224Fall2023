@@ -1,7 +1,7 @@
 //Ryan Lin 114737153
 
 #include <iostream>
-#include "player.hpp"
+#include "player.h"
 using namespace std;
 
 int main()
