@@ -1,4 +1,4 @@
-#include "point.hpp"
+#include "Point.hpp"
 #include <iostream>
 using namespace std;
 
@@ -24,5 +24,9 @@ int main()
 	cin >> y;
 	p2.setY(y);
 	cout << "The point is (" << p2.getX() << ", " << p2.getY() << ")" << endl;
+
+	cout << "Compute the point's euclidean distance to origin (0, 0): " << endl;
+	double dist = p2.dist2origin();
+	cout << "Distance to origin is: " << dist << endl;
 	return 0;
 }
