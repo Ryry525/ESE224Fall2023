@@ -29,5 +29,8 @@ public:
     void setHeight(double newHeight);
     void setNationality(const string& newNationality);
     void prediction(Player p2);
+    void getDetails();
+    void displayDetails();
 };
+
 #endif 

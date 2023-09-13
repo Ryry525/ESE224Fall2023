@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Lab01_Part2_RyanLin",
+      "appliesTo": "LAB01/Lab01_Part2_RyanLin/",
+      "type": "launch"
+    }
+  ]
+}
