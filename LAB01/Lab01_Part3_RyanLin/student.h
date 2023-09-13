@@ -18,6 +18,5 @@ public:
        
     void getDetails();
     void displayDetails();
-
 };
  #endif
