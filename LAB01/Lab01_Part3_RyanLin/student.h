@@ -12,18 +12,12 @@ private:
 public:
     //constructor
     Student();
+    
+    void getPercent();
+    void comparison(Student s2);
+       
+    void getDetails();
+    void displayDetails();
 
-    //Getter Method
-    string getName() const;
-    int getRoll_n() const;
-    int getMarks() const;
-    double getPercent() const;
-
-    //setter Method
-    void setName(const string& newName);
-    void setRoll_n(int newRoll_n);
-    void setMark(int newMark);
-    void setPercent(double percent);
-    void ranking(Student s2);
 };
  #endif
