@@ -10,6 +10,8 @@ private:
     double averageLevel;
     double highestLevel;
     double lowestLevel;
+    int countLevel;
+    double sumLevel;
 public:
     WaterLevelMonitor();
 
@@ -18,5 +20,7 @@ public:
     double getAverageLevel() const;
     double getHighestLevel() const;
     double getLowestLevel() const;
+    double getCountLevel();
+    double getSumLevel();
 };
 #endif

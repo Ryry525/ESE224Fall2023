@@ -1,17 +1,20 @@
 // WaterLevelMonitor.cpp
 
 #include "WaterLevelMonitor.h"
+#include <iostream>
+using namespace std;
 
 WaterLevelMonitor::WaterLevelMonitor() {
     currentLevel = 0.0;
     averageLevel = 0.0;
     highestLevel = 0.0;
     lowestLevel = 0.0;
+    countLevel = 0;
+    sumLevel = 0.0;
 }
-
 void WaterLevelMonitor::receiveData(double level) {
     currentLevel = level;
-
+    countLevel++;
     if (level > highestLevel) {
         highestLevel = level;
     }
@@ -19,8 +22,10 @@ void WaterLevelMonitor::receiveData(double level) {
     if (level < lowestLevel) {
         lowestLevel = level;
     }
-
-    averageLevel = (averageLevel + level) / 2.0;
+    sumLevel += level;
+    averageLevel = sumLevel / countLevel;
+    // cout << "count level: "<< countLevel << endl;
+    // cout << "sum level: "<< sumLevel << endl;
 }
 
 double WaterLevelMonitor::getCurrentLevel() const {
@@ -37,4 +42,10 @@ double WaterLevelMonitor::getHighestLevel() const {
 
 double WaterLevelMonitor::getLowestLevel() const {
     return lowestLevel;
+}
+double WaterLevelMonitor::getCountLevel(){
+    return countLevel;
+}
+double WaterLevelMonitor::getSumLevel(){
+    return sumLevel;
 }
