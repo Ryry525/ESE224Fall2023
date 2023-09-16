@@ -28,5 +28,6 @@ int main()
 	cout << "Compute the point's euclidean distance to origin (0, 0): " << endl;
 	double dist = p2.dist2origin();
 	cout << "Distance to origin is: " << dist << endl;
+	system("pause");
 	return 0;
 }

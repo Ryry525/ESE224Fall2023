@@ -25,6 +25,5 @@ int main(){
         cout << "sum level: "<< monitor.getSumLevel() << endl;
     }
     system("pause");
-
     return 0;
 }

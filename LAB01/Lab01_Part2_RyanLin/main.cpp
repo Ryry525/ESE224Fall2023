@@ -32,6 +32,5 @@ int main()
 
     player2.prediction(player1);
 
-
     return 0;
 }
