@@ -21,8 +21,8 @@ int main(){
         cout << "Average water level:" << monitor.getAverageLevel() << endl;
         cout << "Highest water level:" << monitor.getHighestLevel() << endl;
         cout << "Lowest water level:" << monitor.getLowestLevel() << endl <<endl; 
-        cout << "count level: "<< monitor.getCountLevel() << endl;
-        cout << "sum level: "<< monitor.getSumLevel() << endl;
+        // cout << "count level: "<< monitor.getCountLevel() << endl;
+        // cout << "sum level: "<< monitor.getSumLevel() << endl;
     }
     system("pause");
     return 0;
