@@ -3,6 +3,8 @@
     "string": "cpp",
     "iostream": "cpp",
     "ios": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "new": "cpp",
+    "typeinfo": "cpp"
   }
 }
