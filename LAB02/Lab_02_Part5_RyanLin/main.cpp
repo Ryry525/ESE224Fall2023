@@ -23,7 +23,7 @@ int main()
             cout << "Performing subtraction: " << num1 << " - " << num2 << " = " << num1 - num2 << endl << endl;
             break;
         case 3:
-            cout << "Performing multiplication: " << num1 << " * " << num2 << " * " << num1 * num2 << endl << endl;
+            cout << "Performing multiplication: " << num1 << " * " << num2 << " = " << num1 * num2 << endl << endl;
             break;
         case 4:
             cout << "Performing division: " << num1 << " / " << num2 << " = " << num1 / num2 << endl << endl;

@@ -17,7 +17,7 @@ int main(){
     cout << "The distance between the two point is " << p1 - p2 << endl;
     cout << "Are the two point the same? The answer is " << p2.Equal(p1) << endl;
     cout << "Are the two point the same? The answer is " << (p1==p2) << endl;
-    cout << "Enter a number to multiplr p2 by: \n";
+    cout << "Enter a number to multiply p2 by: \n";
     cin >> r;
     p2 * r;
     p2.Print();

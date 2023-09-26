@@ -8,7 +8,7 @@ Pyramid::Pyramid(int p_rows)
 }
 void Pyramid::create(){
     
-    int xCount;
+    int xCount=0;
    
     for(int i = 0; i < rows; i++)
     {
