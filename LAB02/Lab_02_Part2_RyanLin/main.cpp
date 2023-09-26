@@ -8,12 +8,6 @@ int displayMenu(){
     cout << "1. Add Employee\n2. Update Employee\n3. Delete Employee\n4. Display Employee Information\n5. Display All Employees\n6. Calculate Average Salary\n7. Exit";
 }
 
-void addEmployee(vector<Employee>& employees){
-    cout << 
-    Employee e1; 
-    Employee.pushback(e1);
-}
-
 int main()
 {
     vector<Employee> employees;
@@ -23,13 +17,12 @@ int main()
 
         switch(choice) {
             case 1: 
-                addEmployee(employees);
+                //addEmployee(employees);
                 break;
             case 2: 
-                updateEmployee(employees); 
-                break;
+                //updateEmployee(employees); 
             case 3:
-                displayEmployee(employees);
+                //displayEmployee(employees);
                 break;
         }
     }
