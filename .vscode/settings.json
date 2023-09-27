@@ -6,6 +6,8 @@
     "vector": "cpp",
     "new": "cpp",
     "typeinfo": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "iomanip": "cpp",
+    "iosfwd": "cpp"
   }
 }
