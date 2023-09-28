@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 #define PI M_PI
 int main(){
@@ -10,7 +11,6 @@ int main(){
     ifstream finSine("sine.txt");
     ofstream foutResult("result.txt");
     ifstream finResult("result.txt");
-    srand(time(NULL));
 
     double radian;
     int count = 0;
