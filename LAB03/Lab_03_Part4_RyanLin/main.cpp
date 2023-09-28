@@ -10,6 +10,7 @@ int main(){
     ifstream finSine("sine.txt");
     ofstream foutResult("result.txt");
     ifstream finResult("result.txt");
+    srand(time(NULL));
 
     double radian;
     int count = 0;
@@ -38,19 +39,26 @@ int main(){
         cerr << "Error sine.txt could not be opened" << endl;
         exit(1);
     }
-
-    for(int i = 0; i < 50 ; i++){
-    cout << "Enter radians: \n";
-    cin >> radian;
+    int sample;
+    cout << "Enter sample size: \n";
+    cin >> sample;
+    double step = (2 * PI) / sample;
+    if (sample < 50)
+    {
+        cout << "Sample size too small\n";
+        exit(1);
+    }
+    for(int i = 0; i < sample  ; i++){
     double angle;
-    angle = radian * 180/PI; 
-    foutCos << fixed << setprecision(2) << angle << "\t" << cos(radian) << endl;
-    foutSine << fixed << setprecision(2) << angle << "\t" << sin(radian) << endl;
+    
+    angle = i * step; 
+    foutCos << fixed << setprecision(2) << angle << "\t" << cos(angle) << endl;
+    foutSine << fixed << setprecision(2) << angle << "\t" << sin(angle) << endl;
     }
     double read_angle;
-    double read_temp, identity;
-    while(finCos >> read_angle >> read_temp){
-        identity = (sin(read_angle)*sin(read_angle)) + ((cos(read_angle)*cos(read_angle)));
+    double read_cos, identity, read_sine;
+    while(finCos >> read_angle >> read_cos && finSine >> read_angle >> read_sine){
+        identity = pow(read_sine,2) + pow(read_cos, 2);
         // cout << identity << endl;
         foutResult << identity << endl;
         count++;
