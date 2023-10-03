@@ -10,33 +10,19 @@ int main(){
     ifstream finCos("cosine.txt");
     ifstream finSine("sine.txt");
     ofstream foutResult("result.txt");
-    ifstream finResult("result.txt");
 
-    double radian;
     int count = 0;
     double rmse = 0.0;
-    if(foutCos.fail()){
+    if(foutCos.fail() || finCos.fail()){
         cerr << "Error cosine.txt could not be opened" << endl;
         exit(1);
     }
-    if(foutSine.fail()){
+    if(foutSine.fail() || finSine.fail()){
         cerr << "Error sine.txt could not be opened" << endl;
         exit(1);
     }
     if(foutResult.fail()){
         cerr << "Error result.txt could not be opened" << endl;
-        exit(1);
-    }
-    if(finCos.fail()){
-        cerr << "Error cosine.txt could not be opened" << endl;
-        exit(1);
-    }
-    if(finSine.fail()){
-        cerr << "Error sine.txt could not be opened" << endl;
-        exit(1);
-    }
-    if(finResult.fail()){
-        cerr << "Error sine.txt could not be opened" << endl;
         exit(1);
     }
     int sample;
@@ -76,7 +62,6 @@ int main(){
     foutCos.close();
     foutSine.close();
     foutResult.close();
-    finResult.close();
     finCos.close();
     finSine.close();
 }

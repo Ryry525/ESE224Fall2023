@@ -34,7 +34,8 @@ int main(){
     int terminate = 0;
     do{
         fin >> num;
-        //using unsigned long long b/c the factorial is positive and will be a big number if the factorial is big
+        //using unsigned long long b/c the factorial is positive
+        //and will be a big number if the factorial is big
         unsigned long long fact = factorial(num);
         cout << "Number read from the file is " << num << endl;
         int oper = displayMenu();
