@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
     //use monte carlo integration
-    int numPoints = 10000000;
+    int numPoints = 10000000; // The more number of points the more accurate
     int pointsCircle= 0;
     srand(time(NULL));
     for (int i = 0; i < numPoints; i++){

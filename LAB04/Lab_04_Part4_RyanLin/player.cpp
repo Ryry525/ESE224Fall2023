@@ -34,9 +34,11 @@ void Player::setchoice(int nchoice){
 void Player::winner(Player p2){
     if(coins < p2.coins){
         cout << "The winner is Player 1 with " << p2.coins << " coins" <<endl;
+        cout << "The loser is Player 2 with " << coins << " coins" << endl;
     }
     else if(coins > p2.coins){
         cout << "The winner is Player 2 with " << coins << " coins" << endl;
+        cout << "The loser is Player 1 with " << p2.coins << " coins" << endl;
     }
     else{
         cout << "There is a tie with both players having " << coins << " coins" <<endl;
