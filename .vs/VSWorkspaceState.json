@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\LAB01",
-    "\\LAB01\\Lab01_Part2_RyanLin"
+    "\\LAB01\\Lab01_Part2_RyanLin",
+    "\\LAB01\\Lab01_Part5_RyanLin",
+    "\\Lab05",
+    "\\Lab05\\Lab_05_Part5_RyanLin"
   ],
-  "SelectedNode": "\\LAB01\\Lab01_Part2_RyanLin",
+  "SelectedNode": "\\Lab05\\Lab_05_Part5_RyanLin\\brawlerMain.cpp",
   "PreviewInSolutionExplorer": false
 }
