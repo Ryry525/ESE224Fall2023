@@ -5,3 +5,4 @@ iPad_Pro 999
 Kindle_Oasis 199.99
 EosR5 3899
 Xbox 500000
+ps4 500
