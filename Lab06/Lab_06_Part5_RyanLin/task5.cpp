@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "matrix_Product.h"
 
 using namespace std;
 
@@ -12,10 +13,23 @@ int main() {
 
     vector<vector<int>> nums(rows, vector<int>(cols));
 
-    cout << "Enter the elements row by row:" << endl;
+    cout << "Input the values of the matrix:" << endl;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             cin >> nums[i][j];
         }
     }
+     vector<int> result = rowProduct(nums);
+
+    for (int i = 0; i < result.size(); i++) {
+        cout << result[i] << " ";
+    }
+    cout << endl;
+
+
+    int maxSubarrayProduct = maxProduct(result);
+
+    cout << "Maximum product of a subarray: " << maxSubarrayProduct << endl;
+    return 0;
+}
     
