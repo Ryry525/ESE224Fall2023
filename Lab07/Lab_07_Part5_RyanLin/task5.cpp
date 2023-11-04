@@ -98,14 +98,14 @@ int main() {
     list1.print();
     cout << "List 2: ";
     list2.print();
-    cout << "List 3: ";
+    cout << "Result List: ";
     resultList.print();
 
     // Write the values of resultList to the output file
-    Node* current3 = resultList.getHead();
-    while (current3) {
-        outputFile << current3->data << " ";
-        current3 = current3->next;
+    Node* result = resultList.getHead();
+    while (result) {
+        outputFile << result->data << " ";
+        result = result->next;
     }
 
     // Close the files
