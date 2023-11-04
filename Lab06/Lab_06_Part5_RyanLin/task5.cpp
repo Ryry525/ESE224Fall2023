@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "matrix_Product.h"
+#include "matrix_product.h"
 
 using namespace std;
 
@@ -11,7 +11,7 @@ int main() {
     cout << "Enter the number of columns: ";
     cin >> cols;
 
-    vector<vector<int>> nums(rows, vector<int>(cols));
+    vector<vector<int> > nums(rows, vector<int>(cols));
 
     cout << "Input the values of the matrix:" << endl;
     for (int i = 0; i < rows; i++) {

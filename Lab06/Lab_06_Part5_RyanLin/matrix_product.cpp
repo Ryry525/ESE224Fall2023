@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector<int> rowProduct(vector<vector<int>>& nums) {
+vector<int> rowProduct(vector<vector<int> >& nums) {
     vector<int> productRow;
     int rows = nums.size();
     int cols = nums[0].size();

@@ -4,6 +4,6 @@
 #include <vector>
 using namespace std;
 
-vector<int> rowProduct(vector<vector<int>>& nums);
+vector<int> rowProduct(vector<vector<int> >& nums);
 int maxProduct(vector<int>& nums);
 #endif
